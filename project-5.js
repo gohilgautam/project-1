@@ -56,6 +56,18 @@
 //          Minimum value: 11
 // ----------------------------------------------------------------------------------------------------
 
+// 4.Write a JavaScript program to convert all array elements into ASCII values.
+
+// let array = ["A", "B", "C", "D"];
+// let asciiValues = array.map(function(char) {
+//     return char.charCodeAt(0);
+// });
+
+// console.log(asciiValues);
+
+// ----------------------------------------------------------------------------------------------------
+
+
 //5. write a javascript program to negative value using the filter array function
 
 // let numbers = [-23, -20, -17, -12, -5, 0, 1, 5, 12, 19, 20]
@@ -83,25 +95,29 @@
 
 // -----------------------------------------------------------------------------------------------------
 
-//7.Write a JavaScript program for sorting an array in ascending descending.
+// 7.Write a JavaScript program for sorting an array in ascending descending.
 
 // let numbers = [23, 20, 17, 12, 5, 0, 1, 5, 12, 19, 20];
+// myColor = ["Red", "Green", "White", "Black"];
 
 // let ascending = numbers.sort((a, b) => a - b);
-// console.log("Ascending Order:", ascending);
+// console.log("Ascending order:", ascending);
 
 // let descending = numbers.sort((a, b) => b - a);
-// console.log("Descending Order:", descending);
+// console.log("Descending order:", descending);
+
+// Output :- Ascending order: [0, 1, 5, 5, 12, 12, 17, 19, 20, 20, 23]
+//           Descending order: [23, 20, 20, 19, 17, 12, 12, 5, 5, 1, 0]
 
 // -----------------------------------------------------------------------------------------------------
 
 //8. Write a JavaScript program which filters out any string which is less than 8 characters.
 
 // let words = ['Python', 'Javascript', 'Go', 'Java', 'PHP', 'Ruby'];
-// let Word = words.filter(word => word.length < 8);
+// let Word = words.filter(word => word.length > 8);
 // console.log(Word);
 
-//output :- ['Python', 'Go', 'Java', 'PHP', 'Ruby']
+//output :- ['Javascript']
 
 // -----------------------------------------------------------------------------------------------------
 
@@ -118,14 +134,20 @@
 
 // 2)
 // let y = "oxoxoxox";
+// let result = "";
+
+// for (let i = 0; i < y.length; i++) {
+//     result += (i % 2 === 0) ? y[i].toLowerCase() : y[i].toUpperCase();
+// }
+// console.log(result);
+
+// Output: "oXoXoXoX"
 
 // 3)
-
 // let words="A New Java Book";
-// console.log(words.toLowerCase());
-// console.log(words.toUpperCase());
+// console.log(`"${words.toLowerCase()}","${words.toUpperCase()}"`);
 
-//output :- a new java book, A NEW JAVA BOOK
+//output :- a new java book A NEW JAVA BOOK
 
 // -----------------------------------------------------------------------------------------------------
 
@@ -140,6 +162,7 @@
 
 // let b = a.split(" ");
 // console.log(b);
+
 // Output:- ["Hire", "the", "top", "1%"]
 
 // -----------------------------------------------------------------------------------------------------
@@ -147,10 +170,13 @@
 // 11. write a JavaScript program to check if a value is found or not?
 
 // let fruits = ["apple", "banana", "cherry"];
-// console.log(fruits.includes("banana")+`, This is find`);
-//  // Output :- true 'This is found in the array.'
-// console.log(fruits.includes("orange")+`, This is not find`);
-//  // Output :- false 'This is not found in the array.'
+// console.log(fruits.includes("banana")+ "This is find");
+
+// Output :- true 'This is found in the array.'
+
+// console.log(fruits.includes("orange")+  "This is not find");
+
+// Output :- false 'This is not found in the array.'
 
 // -----------------------------------------------------------------------------------------------------------------------
 
@@ -175,8 +201,7 @@
 // let newStr = str.replace(/dog/g, "cat");
 // console.log("String After Replace :-",newStr); 
 
-// Output: "I often take a walk with my cat in the evening. 
-// His cat follows him everywhere. I don't feed my cat in the morning"
+// Output: "I often take a walk with my cat in the evening. His cat follows him everywhere. I don't feed my cat in the morning"
 
 // -----------------------------------------------------------------------------------------------------------------------
 
@@ -187,6 +212,7 @@
 // let stringToArray = string.split(" "); 
 
 // console.log("Array : ", stringToArray);
+
 // Output:- Array : ["Hire", "the", "top", "1%", "freelance", "developers"]
 
 // -----------------------------------------------------------------------------------------------------------------------
@@ -198,4 +224,5 @@
 // let Arr = ['5', 32, 'Daniel'];
 // let arrayToString =  Arr.join(", ");
 // console.log(arrayToString)
+
 // Output: 5,32, Daniel
