@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #272626;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    background-image: url(https://cdn.who.int/media/images/default-source/health-topics/coronavirus/corona-virus-getty.tmb-1200v.jpg?sfvrsn=217a6a68_42);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-position: center;
+    color: white;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width:250px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff4a3d;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #dc5050;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 250px;
+    max-width: 250px;
+    margin: 10px;
+}
